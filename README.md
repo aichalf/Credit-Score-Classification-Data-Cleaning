@@ -1,50 +1,41 @@
-# CSI 4142 - Assignment 2: Data Cleaning 
+# 💳 Credit Score Classification — Data Cleaning & Preprocessing
 
-This project was completed as part of the **Fundamentals of Data Science (CSI 4142)** course at the University of Ottawa.  
-It focuses on **data cleaning and preprocessing** of a **Credit Score Classification dataset**.
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python) ![pandas](https://img.shields.io/badge/pandas-Data%20Wrangling-blue) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
----
+> Professional data cleaning pipeline on a credit score dataset — handling missing values, outliers, encoding, and feature normalization for downstream ML.
 
-## Dataset
-**Credit Score Classification Dataset**  
-- Attributes: annual income, payment behavior, credit history, loan details, credit utilization ratio, etc.  
-- Source: provided as part of CSI 4142 coursework.  
+## 📌 Overview
 
----
+This project demonstrates industry-standard data preparation techniques applied to a real-world credit score classification dataset, transforming messy raw data into a clean, analysis-ready format.
 
-## Tools & Libraries
-- **Google Colab** (Jupyter Notebook environment)  
-- Python  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
+## 🔍 Data Quality Issues Addressed
 
----
+| Issue | Technique Applied |
+|---|---|
+| Missing values | Median imputation (numerical), mode (categorical) |
+| Outliers | IQR-based detection and treatment |
+| Inconsistent types | Type casting and format standardization |
+| Categorical encoding | Label encoding + one-hot encoding |
+| Feature scaling | StandardScaler / MinMaxScaler |
+| Class imbalance | Analysis and documentation |
 
-## Workflow
-1. Importation of the dataset (CSV, zipped format).  
-2. Initial exploration: size, structure, column overview.  
-3. Data cleaning:  
-   - Handling missing values  
-   - Fixing inconsistent values (e.g., categorical cleaning)  
-   - Type conversions  
-4. Preprocessing for future **machine learning models**.  
+## 📊 Dataset Features
+`annual_income` · `payment_behavior` · `credit_history_age` · `num_loans` · `credit_utilization_ratio` · `outstanding_debt` · `monthly_balance`
 
----
+## 🛠️ Tech Stack
+`Python` · `pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `scikit-learn`
 
-## Key Insights
-- Missing values in income and loan columns were addressed.  
-- Payment behavior and credit utilization proved critical for predicting credit scores.  
-- Dataset cleaned and ready for **predictive modeling**.  
+## 💼 Business Applications
+- Credit risk modeling and probability of default (PD) estimation
+- Banking KYC and customer scoring pipelines
+- Financial services data engineering
 
----
+## 🚀 Run Locally
+```bash
+git clone https://github.com/aichalf/Credit-Score-Classification-Data-Cleaning
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+jupyter notebook Copie_de_Dataset_2_CSI4142_A2.ipynb
+```
 
-## Notebook
-- Google Colab Link: [View Notebook](https://colab.research.google.com/drive/1LA4wf7hZN_O2oKYVerjgkgcgA6vdqTjY?usp=sharing)  
-- Local copy: `Dataset2_CSI4142_A2.ipynb` (included in this repository).  
-
----
-
-## Author
-Created by **Aicha Lfakir**  
-📂 GitHub Portfolio: [@aichalf](https://github.com/aichalf)  
-🔗 LinkedIn: [Aicha Lfakir](https://www.linkedin.com/in/aicha-lfakir)  
+## 👩‍💻 Author
+**Aicha Lfakir** · [LinkedIn](https://linkedin.com/in/aicha-lfakir) · [GitHub](https://github.com/aichalf)
